@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content="width-device-width, initial-scale = 1.0">
+        <title>Personal Profile Page</title>
+    </head>
+    
+    <body>
+        <header>
+            <h1>Personal Profile Page</h1>
+        </header>
+        <nav>
+            <a href="#home">Home</a> | <a href="#about">About</a> | 
+            <a href="#contact">Contact</a>
+        </nav>
+        <section>
+            <article>
+                <h2>Short Introduction</h2>
+                <p>Hello! My name is Wong Cai Yi, a 20-year-old student from Malaysia. 
+                I’m passionate about learning new things, especially in technology and web development. 
+                In my free time, I enjoy exploring creative projects and expanding my skills.</p>
+            </article>
+        </section>
+        <table border="1" cellpadding="20" cellspacing="0">
+            <tr>
+                <th colspan = "4">My Personal Information</th>
+            </tr>
+            <tr>
+                <td>Name</td>
+                <td>Age</td>
+                <td>Occupation</td>
+                <td>Nationality</td>
+            </tr>
+            <tr>
+                <td>Wong Cai Yi</td>
+                <td>20</td>
+                <td>Student</td>
+                <td>Malaysia</td>
+            </tr>
+        </table><br>
+        <form action="submit_form.php" method = "post">
+            <label for="name">Name: </label><br>
+            <input type="text" name="name" id="name"><br><br>
+
+            <label for="email">Email: </label><br>
+            <input type="text" name="email" id="email"><br><br>
+
+            <label for="gender">Gender: </label><br>
+            <input type="radio" id="male" name="gender" value = "male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value = "female">
+            <label for="female">Female</label><br><br>
+
+            <label for="hobby">Favourite Hobbies: </label><br>
+            <input type="checkbox" id="hobby1" name="hobby1" value="Reading">
+            <label for="hobby1">Reading</label><br>
+            <input type="checkbox" id="hobby2" name="hobby2" value="Gaming">
+            <label for="hobby2">Gaming</label><br>
+            <input type="checkbox" id="hobby3" name="hobby3" value="Listen to song">
+            <label for="hobby3">Listen to song</label><br>
+            <input type="checkbox" id="hobby4" name="hobby4" value="Play online games">
+            <label for="hobby4">Play online games</label><br>
+
+            <input type="submit" value="Submit">
+        </form>
+        <footer>
+            <p><i>Copyright &copy; 2024 My Personal Profile Page </i></p>
+        </footer>
+    </body>
+</html>
